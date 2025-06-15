@@ -58,7 +58,7 @@
 %A Few Useful Packages
 \RequirePackage[english,french]{babel}
 \RequirePackage[utf8]{inputenc}
-\RequirePackage{fontspec} 					                 % for loading fonts
+\RequirePackage[T1]{fontenc}
 \RequirePackage{url,parskip} 	    % other packages for formatting
 \RequirePackage[usenames,dvipsnames]{xcolor}
 \RequirePackage{fullpage}
@@ -140,22 +140,14 @@
 \hyphenation{im-pre-se}
 
 % Setup fonts
-\defaultfontfeatures{Mapping=tex-text}
-%
-
-% Define font to use according to localFont option
 \ifundef{\@local}
 {
-  %\setmainfont[BoldFont = Helvetica Neue, ItalicFont=Helvetica Neue Thin Italic ,SmallCapsFont = Helvetica Neue Light]{Helvetica Neue Thin}
-  \setmainfont{Source Sans Pro Light}[
-    BoldFont = SourceSansPro-Regular, 
-    ItalicFont= Source Sans Pro Light Italic]
+  \RequirePackage{sourcecodepro}
+  \RequirePackage{source sans pro}
 }
 {
-  \setmainfont{SourceSansPro-Light}[
-    Path = fonts/, 
-    BoldFont = SourceSansPro-Regular, 
-    ItalicFont = SourceSansPro-LightIt]
+  \RequirePackage{sourcecodepro}
+  \RequirePackage{source sans pro}
 }
 
 %New length definition
@@ -340,10 +332,11 @@
   \end{tabular}
 }
 
-% Render a scholarshipentry in the scolarship environment
-% Usage: \scholarshipentry{<date>}{<description>}
-\newcommand\scholarshipentry[2]{
-  #1    &  #2 \\
+% Nuevo: educationentry con título y descripción
+% Uso: \educationentry{<fecha>}{<título>}{<descripción>}
+\newcommand\educationentry[3]{
+  \textbf{#1} & \textbf{#2} \\*
+             & \emph{#3} \\[0.7em]
 }
 
 % Define the 'skills' environment
@@ -380,8 +373,11 @@
   \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
   \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
   					         #6
-                   \end{minipage}										\\*
-                 & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
+                   \end{minipage}	\\*
+                   \vspace{0.6em} 
+                 & \footnotesize{
+                  \hspace{1.8em}
+                  \foreach \n in {#7}{\cvtag{\n}}} 	\\
   }
 
 % Render a consultant experience in the experiences environment
@@ -401,7 +397,6 @@
                    	\end{minipage}										\\*
                  & \footnotesize{\foreach \n in {#9}{\cvtag{\n}}} 	\\
   }
-
 \newcommand\emptySeparator{\multicolumn{2}{c}{}\\}
 
 % Define the 'projects' environment

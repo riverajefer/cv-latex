@@ -1,4 +1,4 @@
-% !TEX TS-program = xelatex
+% !TEX TS-program = pdflatex
 % Awesome Source CV LaTeX Template
 %
 % This template has been downloaded from:
@@ -11,6 +11,9 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 
 \documentclass[localFont,alternative]{yaac-another-awesome-cv}
+\usepackage{setspace}
+\setstretch{1.15} %
+
 \name{Jeeferson}{Rivera}
 \tagline{Software developer | Fullstack developer}
 \photo{2.5cm}{darwiin}
@@ -32,13 +35,11 @@
 		{\thepage}
 
 	\input{section_headline}
-	\input{section_competences}				% Section compétence
-	\input{section_experience_short}		% Section expérience
-	\input{section_langues}					% Section langues
+	\input{section_competences}			 % Section compétence
+	\input{section_experience_short} % Section expérience
 	\input{section_scolarite}				% Section scholarité
 	%\input{section_interets}				% Section intérêts
 	\input{section_projets}
-	\input{section_references} 				% Section références
-
+	\input{section_langues}					% Section langues
 
 \end{document}
