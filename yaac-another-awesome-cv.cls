@@ -335,7 +335,7 @@
 % Nuevo: educationentry con título y descripción
 % Uso: \educationentry{<fecha>}{<título>}{<descripción>}
 \newcommand\educationentry[3]{
-  \textbf{#1} & \textbf{#2} \\*
+  #1 & \textbf{#2} \\*
              & \emph{#3} \\[0.7em]
 }
 
@@ -410,10 +410,26 @@
 % Usage:
 % \project
 %   {<Project name>}{<dates>}
+%   {<Project description>}
+%   {<techno1>,<techno2>}
+% without links
+\newcommand\project[4]{
+  \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
+    \textbf{\textsc{#1}} \hfill \textsc{#2}\smallskip\\
+    #3\smallskip\\
+    \footnotesize{\foreach \n in {#4}{\cvtag{\n}}}\\
+  \end{minipage}
+  \\*
+}
+
+% Define the 'project with link' entry in the 'projects' environment
+% Usage:
+% \project
+%   {<Project name>}{<dates>}
 %   {<link1> <link2>}
 %   {<Project description>}
 %   {<techno1>,<techno2>}
-\newcommand\project[5]{
+\newcommand\projectwithlink[5]{
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
     \textbf{\textsc{#1}} \hfill \textsc{#2}\smallskip\\
     #3\\
