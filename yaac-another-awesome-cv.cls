@@ -177,7 +177,7 @@
 
 % Render author's name
 % Usage: \user{<firstanme>}{<lastname>}
-\newcommand\user[2]{\color{accentcolor}{\LARGE #1 \textsc{\textbf{#2}}}\color{Black}}
+\newcommand\user[2]{\color{Black}{\LARGE #1 \textsc{\textbf{#2}}}\color{Black}}
 
 % Render a text with its symbol
 % Usage; \socialtext{<icon>}{<label>}
@@ -240,18 +240,19 @@
 
 % Render author's tagline
 \newcommand\resumetitle[1]{
+  
   \ifundef{\@alternative}{
 	 \par{
-	 	 \bigskip\center{\Large \color{accentcolor}\textbf{#1}\color{Black}}\par
+	 	 \bigskip\center{\Large \color{basecolor}\textbf{#1}\color{Black}}\par
 	 }
 	 \bigskip
   }{
-    \color{accentcolor}\textbf{\large{#1}}\color{black}
+    \color{basecolor}\textbf{\large{#1}}\color{black}
   }
 }
 
 \newcommand\idphoto{
-  \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
+  \tikz\path[fill overzoom image={\@photo}]circle[radius=0.6\linewidth];
 }
 
 % Define social entries to print in header
@@ -264,7 +265,7 @@
     \ifundef{\@photodiameter}{
       \begin{minipage}{\linewidth}
     }{
-      \begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}
+      \begin{minipage}{\dimexpr\linewidth-\@photodiameter-1em}
     }
     \color{accentcolor}\user{\@firstname}{\@lastname}\color{black}\\
     \small{\@socialinfo}
@@ -281,7 +282,7 @@
     }{
       \begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}
     }
-    \user{\@firstname}{\@lastname}\\
+    \user{\@firstname}{\@lastname} \\
     \resumetitle{\@tagline}
     \smallskip\\
     \small{\@socialinfo}
