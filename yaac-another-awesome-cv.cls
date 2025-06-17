@@ -152,10 +152,10 @@
 
 %New length definition
 \newlength{\rightcolumnlength}
-\setlength{\rightcolumnlength}{14.8cm}
+\setlength{\rightcolumnlength}{15.3cm}
 
 \newlength{\leftcolumn}
-\setlength{\leftcolumn}{2.5cm}
+\setlength{\leftcolumn}{2.0cm}
 
 % Font Awesome icons aliases
 \newcommand{\mailSymbol}{\faAt}
@@ -371,15 +371,20 @@
 %                    }
 %                    {<Technology list>}
 \newcommand\experience[7]{
-  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
-  \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
-  					         #6
-                   \end{minipage}	\\*
-                   \vspace{0.6em} 
-                 & \footnotesize{
-                  \hspace{1.8em}
-                  \foreach \n in {#7}{\cvtag{\n}}} 	\\
-  }
+  \small\parbox[t]{\leftcolumn}{#1}    
+  & \textbf{#2, \textsc{#3}, #4} \\*
+  \small\parbox[t]{\leftcolumn}{#5}    
+  & \begin{minipage}[t]{\rightcolumnlength}
+      #6
+    \end{minipage} \\*
+  \vspace{0.6em} 
+  & \footnotesize{
+      \hspace{1.8em}
+      \foreach \n in {#7}{\cvtag{\n}}} \\
+}
+
+
+
 
 % Render a consultant experience in the experiences environment
 % Usage: 
