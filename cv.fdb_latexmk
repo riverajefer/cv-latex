@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1750125143.62386 "/Users/jeffersonrivera/Jeff/CV/MY-CV-2025/cv.tex" "cv.pdf" "cv" 1750125145.18827 2
-  "/Users/jeffersonrivera/Jeff/CV/MY-CV-2025/cv.tex" 1750120702.39213 1101 362f7f7c07ca31c0ac5fac1632d90dd1 ""
+["pdflatex"] 1750173288.48422 "/Users/jeffersonrivera/Jeff/CV/MY-CV-2025/cv.tex" "cv.pdf" "cv" 1750173289.94191 2
+  "/Users/jeffersonrivera/Jeff/CV/MY-CV-2025/cv.tex" 1750173288.21106 1097 c3a918e68375b7e4aa5c082047f1a32f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
@@ -196,17 +196,17 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1749922642 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "cv.aux" 1750125145.03343 1539 59ffc9bd707a4d4298858958878fe16e "pdflatex"
-  "cv.out" 1750125145.03486 594 52b96be233030519a6889e81f93f0d92 "pdflatex"
-  "cv.tex" 1750120702.39213 1101 362f7f7c07ca31c0ac5fac1632d90dd1 ""
+  "cv.aux" 1750173289.8057 1539 59ffc9bd707a4d4298858958878fe16e "pdflatex"
+  "cv.out" 1750173289.80724 594 52b96be233030519a6889e81f93f0d92 "pdflatex"
+  "cv.tex" 1750173288.21106 1097 c3a918e68375b7e4aa5c082047f1a32f ""
   "perfil.jpg" 1750043136.94929 33874 917c59e2a8b99bfde44c9a9e82396796 ""
   "section_competences.tex" 1750118284.34146 1077 4fa3ca601de5feddcc2caf172e7d13c6 ""
   "section_experience_short.tex" 1750120950.2975 4708 083509ac8a6d56db507bb099b5b697bb ""
-  "section_headline.tex" 1750122267.83333 1174 e6dd68eafe3b333dea361dffb9bd1ccb ""
+  "section_headline.tex" 1750172778.4017 1335 bca651131ab2d7c6f697a78eb8100529 ""
   "section_langues.tex" 1750125143.40152 622 34a05a0c08805c16defe30dfc759eb7c ""
-  "section_projets.tex" 1750124698.26351 1493 9b3836ef2c0138ab14037fdeb2949f44 ""
+  "section_projets.tex" 1750172933.03207 1493 9b3836ef2c0138ab14037fdeb2949f44 ""
   "section_scolarite.tex" 1750086423.34294 1228 59d52ce70809fe5e78ac7488dd581c9e ""
-  "yaac-another-awesome-cv.cls" 1750120929.27804 12713 b3be46a1baaf49a45a866e98aa8c43e2 ""
+  "yaac-another-awesome-cv.cls" 1750172925.72673 12710 741626582855db379f6c40820c9d3644 ""
   (generated)
   "cv.aux"
   "cv.log"
